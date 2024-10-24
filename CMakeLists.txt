@@ -21,6 +21,7 @@ find_package(nlohmann_json CONFIG REQUIRED)
 find_package(EXPAT CONFIG REQUIRED)
 
 include(FetchContent)
+set(FETCHCONTENT_TRY_FIND_PACKAGE_MODE ALWAYS)
 include(SystemLibraries.cmake)
 include(HederaApi.cmake)
 
